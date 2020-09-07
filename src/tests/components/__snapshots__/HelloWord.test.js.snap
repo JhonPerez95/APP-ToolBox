@@ -45,6 +45,12 @@ exports[`Test the component HelloWord should render component 1`] = `
       <h3>
         Response API:
       </h3>
+      <div
+        className="alert alert-success"
+        role="alert"
+      >
+        test the input
+      </div>
     </div>
   </div>
 </div>
