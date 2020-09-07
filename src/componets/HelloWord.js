@@ -1,6 +1,6 @@
 import React from 'react';
 import useForm from '../hooks/useForm';
-import { sendText } from '../redux/actions/textActions';
+import { StartSendText } from '../redux/actions/textActions';
 import { useDispatch, useSelector } from 'react-redux';
 
 const HelloWord = () => {
@@ -13,7 +13,8 @@ const HelloWord = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(sendText(text));
+    console.log(formValue);
+    dispatch(StartSendText(formValue));
     resetInput();
   };
   return (
