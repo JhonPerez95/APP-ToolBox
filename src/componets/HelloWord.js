@@ -1,7 +1,11 @@
 import React from 'react';
 import useForm from '../hooks/useForm';
+import { sendText } from '../redux/actions/textActions';
+import { useDispatch, useSelector } from 'react-redux';
 
 const HelloWord = () => {
+  const dispatch = useDispatch();
+  const { textField } = useSelector((state) => state.text);
   const [formValue, handleInputChange, resetInput] = useForm({
     text: '',
   });
@@ -9,7 +13,7 @@ const HelloWord = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formValue);
+    dispatch(sendText(text));
     resetInput();
   };
   return (
@@ -39,9 +43,9 @@ const HelloWord = () => {
         </div>
         <div className="col-md-6 login-form-2">
           <h3>Response API:</h3>
-          {text && (
+          {textField && (
             <div className="alert alert-success" role="alert">
-              {text}
+              {textField}
             </div>
           )}
         </div>
