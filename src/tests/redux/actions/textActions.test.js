@@ -20,6 +20,7 @@ describe('test the actions textActions', () => {
     const data = {
       text: 'Test input',
     };
+
     await store.dispatch(StartSendText(data));
     const resAction = store.getActions();
     // console.log(resAction[0]);

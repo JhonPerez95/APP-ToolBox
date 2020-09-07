@@ -4,6 +4,7 @@ import { textReducer } from '../../../redux/reducer/textReducer';
 
 describe('Test the Reducer textReducer', () => {
   const initialState = {};
+
   const action = {
     type: types.textSend,
     payload: 'Text de prueba',
