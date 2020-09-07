@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the component HelloWord should render component 1`] = `
+<div
+  className="container login-container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-6 login-form-1"
+    >
+      <h3>
+        Prueba Tecnica:
+      </h3>
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            name="text"
+            onChange={[Function]}
+            placeholder="Send Text"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="btnSubmit btn btn-primary"
+            type="submit"
+            value="Send"
+          />
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-md-6 login-form-2"
+    >
+      <h3>
+        Response API:
+      </h3>
+    </div>
+  </div>
+</div>
+`;
